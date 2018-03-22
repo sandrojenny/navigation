@@ -2,11 +2,18 @@ body {
   font-family: sans-serif;
 }
 
+.menu {
+  height: 50px;
+  background-color: grey;
+}
+
 ul.nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   position: absolute;
+  overflow: hidden;
+  text-align: center;
 }
 
 ul.nav li {
@@ -18,7 +25,7 @@ ul.nav li {
   /* Menu Link */
   ul.nav li a {
     display: block;
-    min-width: 150px;
+    min-width: 120px;
     line-height: 50px;
     text-align: center;
     text-decoration: none;
@@ -52,12 +59,22 @@ ul.subnav li a {
   color: black;
   height: 40px;
   line-height: 40px;
+  min-width: 150px;
   width: auto;
-  min-width: 100px;
-  padding: 0 20px;
+  padding: 0 0;
 }
 
   ul.subnav li a:hover {
     color: white;
     display: block;
   }
+
+
+/* Mobile */
+
+@media screen and (max-width : 760px) {
+  ul.nav li, li a {
+    position: static;
+    width: 100%;
+  }
+}
