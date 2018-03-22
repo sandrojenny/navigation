@@ -1,0 +1,30 @@
+
+#main-menu {
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+  height: 50px;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+}
+
+#main-menu > li {
+  float: left;
+  margin-right: 0.5em;
+  padding: 0 1em;
+}
+
+#main-menu > li > a {
+  float: left;
+  line-height: 3;
+}
